@@ -37,7 +37,11 @@ const productsRoute = createRoute({
     component: ProductsPage,
 })
 
-const routeTree = rootRoute.addChildren([dashboardRoute, productsRoute])
+const routeTree = rootRoute
+    .addChildren([
+        dashboardRoute,
+        productsRoute
+    ])
 
 export const router = createRouter({
     routeTree,
