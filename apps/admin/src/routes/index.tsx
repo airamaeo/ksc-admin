@@ -1,11 +1,13 @@
 import { createFileRoute } from '@tanstack/react-router'
+import {SidebarLayout} from "../components/layout/sidebar-layout.tsx";
 
 function DashboardPage() {
   return (
-      <div>
-        <h2>Dashboard</h2>
-        <p>Welcome to KSC Admin.</p>
-      </div>
+      <SidebarLayout  title="Dashboard">
+          <div>
+              <p>Welcome to KSC Admin Panel</p>
+          </div>
+      </SidebarLayout>
   )
 }
 
